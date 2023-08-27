@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#__next{
+  height: 100%;
+}
+body{
+  color: black;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.container{
+  height: 100%;
+background: url(/images/bg.jpg);
+ background-size: cover;
+ background-position: center;
+display: grid;
+justify-items: center;
+  align-items: center;
+}
+.homeContent{
+  z-index: 2;
+}
+.selectInput{
+  width: 700px; 
+}
+.select__control{
+  height: 70px;
+  padding-inline: 1rem;
+  border-radius: 20px!important;
+}
+.select__indicator-separator{
+  display: none;
+}
+.pollutionModal{
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #aabba2;
+  border-radius: 18px;
+  box-shadow: 0px 0px 8px 4px #adadad5c;
+  padding: 1rem 2rem;
+}
+.pollutionModal button{
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  outline: none ;
+}
+
+@keyframes slideIn {
+  0%{
+    right: -10%;
+    opacity: 0%;
+  }
+  100%{
+    right: 0;
+    opacity: 100%;
+  }
+}
+
+.locationDiv{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  border: 6px solid #ddd;
+  height: 60%;
+  border-radius: 15px;
+  animation: slideIn 0.7s;
+  box-shadow: 0px 0px 8px 4px #adadad5c;
+  display: flex;
+  flex-direction: column;
+}
+
+.locationDiv .locationContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  height: 100%;
+}
+.locationDiv .locationContent div{
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.locationDiv .locationContent button{
+  height: 50px;
+  margin-top: auto;
+  background-color: #a6bba5;
+  border: none;
+  border-radius:8px
+}
+
+.locationDiv h2{
+ background-color:#a6bba5 ;
+ padding: 3rem;
+}
+
+.locationDiv p{
+ font-weight: 700;
+ font-size: 18px;
+}
+.locationDiv span{
+ font-weight: 400;
+ font-size: 16px;
+}
+
+.modalInput{
+  display: flex;
+}
+.modalInput div{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
